@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <base href="{{site.github.url}}">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico" />
+    <title>Sign Up Form | CSS講座</title>
+</head>
+
+<body>
+    <form class="container" action="#" method="post">
+        <h1 class="title">Create account</h1>
+        <p class="signin"><span>Already have an account?</span><a href="#">Sign in</a></p>
+        <input class="email" type="email" name="email" maxlength="40" placeholder="E-mail" required>
+        <div class="name_container">
+            <input class="first_name" type="text" name="first_name" maxlength="15" placeholder="First name" required>
+            <input class="last_name" type="text" name="last_name" maxlength="15" placeholder="Last name" required>
+        </div>
+        <input class="password" type="password" name="password" maxlength="20" placeholder="Password" required>
+        <button class="submit_btn" type="submit">
+            <span>Sign Up</span>
+            <picture>
+                <source srcset="img/arrow-right.webp" type="image/webp" />
+                <img class="submit_btn_img" src="img/arrow-right.png" alt="SignUp" />
+            </picture>
+        </button>
+        <div class="checkbox_container">
+            <input id="agreement" type="checkbox" name="agreement" value="agree" required>
+            <label for="agreement">
+                I have read and agree to the <a href="#">Teams of Service</a>
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
