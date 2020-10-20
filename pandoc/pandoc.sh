@@ -1,0 +1,1 @@
+pandoc -s --self-contained textbook.md -t html5 -c github.css -o textbook.html
